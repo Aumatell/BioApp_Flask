@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+<div>
+    <br><br>
+    <form action="/transform_results" method="POST">
+        <label>Your sequence:</label><br>
+        <textarea name="input_seq" rows=10 cols=122></textarea>
+        <br><br>
+        <input type="radio" name="transform" value="transcribe">
+        <label>Transcribe to RNA</label><br>
+        <input type="radio" name="transform" value="translate">
+        <label>Translate to protein</label><br>
+        <input type="radio" name="transform" value="complementary">
+        <label>Complementary of the sequence</label><br>
+        <input type="radio" name="transform" value="rev-com">
+        <label>Reverse complementary of the sequence</label><br>
+        <br>
+        <input type="submit" name="submit" value="Run">
+        <p></p><br>
+    </form>
+</div>
+{% endblock %}

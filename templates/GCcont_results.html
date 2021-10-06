@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+<div>
+    <h3>GC content of your sequence </h3>
+    <p>The input sequence was</p>
+    <p class="sequence">{{ input_text }}</p>
+    <br>
+    <p>The GC content of your sequence is</p>
+    <p class="sequence">{{ output_text }}%</p>
+</div>
+{% endblock %}

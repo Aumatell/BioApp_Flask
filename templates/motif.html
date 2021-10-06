@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+<div>
+    <br>
+    <br>
+    <form action="/motif_results" method="POST">
+        <label>Your sequence:</label><br>
+        <textarea name="input_seq" rows=10 cols=122></textarea>
+        <br><br>
+        <label>Your motif:</label><br>
+        <input type="text" name="motif_seq" size=160>
+        <br><br>
+        <input type="submit" name="submit" value="Run">
+        <p></p><br>
+    </form>
+</div>
+{% endblock %}

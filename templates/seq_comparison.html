@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<div>
+     <h3>Sequence comparison </h3>
+    <br><br>
+    <form action="/seq_comparison_results" method="POST">
+        <label>Your sequence 1:</label><br>
+        <textarea name="input_seq1" rows=10 cols=122>
+        </textarea>
+        <br>
+        <label>Your sequence 2:</label><br>
+        <textarea name="input_seq2" rows=10 cols=122>
+        </textarea>
+        <br><br>
+        <input type="submit" name="submit" value="Run">
+        <p></p><br>
+    </form>
+</div>
+{% endblock %}
